@@ -1,0 +1,11 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="container">
+  <view class="logo">
+    <l-avatar placement="bottom" open-data="{{['userAvatarUrl', 'userNickName']}}" />
+  </view>
+
+  <text class="prompt">hello</text>
+  <view class="journey-container">
+    <text class="journey"> 开启小程序之旅</text>
+  </view>
+</view>

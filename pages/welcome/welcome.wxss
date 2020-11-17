@@ -1,0 +1,36 @@
+/* pages/welcome/welcome.wxss */
+
+.container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: #b3d4db;
+  height: 100vh;
+}
+
+.logo {
+  margin-top: 60rpx;
+  border-radius: 50%;
+}
+
+.prompt {
+  margin-top: 100rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.journey-container {
+  border: 1px solid #405f80;
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 200rpx;
+}
+
+.journey {
+  font-size: 22rpx;
+  color: #405f80;
+  font-weight: bold
+}
