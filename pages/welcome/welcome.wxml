@@ -6,6 +6,8 @@
 
   <text class="prompt">hello</text>
   <view class="journey-container">
-    <text class="journey"> 开启小程序之旅</text>
+    <text class="journey" bindtap="navigateToPost" data-id='1' data-name-hi='hello'> 开启小程序之旅</text>
   </view>
+
+  <text wx:for="{{array}}">{{item}}</text>
 </view>

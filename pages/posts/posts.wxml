@@ -22,7 +22,11 @@
       <text>NOv 18 2019</text>
     </view>
     <text class="post-title">2020年前端发展</text>
-    <image class="post-image" src="/images/20.jpg"></image>
+    <image class="post-image" 
+    bindtouchstart="start"
+    bindtouchmove="move"
+    bindtouchend="end"
+    src="/images/20.jpg"></image>
     <text class="post-content">2020年前端发展2020年前端发展2020年前端发展2020年前端发展2020年前端发展2020年前端发展2020年前端发展2020年前端发展2020年前端发展2020年前端发展2020年前端发展2020年前端发展2020年前端发展2020年前端发展2020年前端发展2020年前端发展2020年前端发展2020年前端发展2020年前端发展2020年前端发展
     </text>
     <view class="post-like">
@@ -32,4 +36,6 @@
       <text>10</text>
     </view>
   </view>
+      <mp-tabbar current = "{{0}}"style="position:fixed;bottom:0;width:100%;left:0;right:0;" bindchange="tapChange" list="{{list}}" ></mp-tabbar>
+
 </view>

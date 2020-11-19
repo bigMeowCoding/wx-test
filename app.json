@@ -1,7 +1,9 @@
 {
   "pages": [
+    "pages/posts/posts",
     "pages/welcome/welcome",
-    "pages/posts/posts"
+    "pages/test/test",
+    "pages/movies/movies"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -10,5 +12,8 @@
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
+    "usingComponents": {
+      "l-rate": "/miniprogram_npm/lin-ui/rate/index"
+    },
   "sitemapLocation": "sitemap.json"
 }

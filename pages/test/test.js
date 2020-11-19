@@ -1,19 +1,28 @@
-// pages/welcome/welcome.js
+// pages/test/test.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    array:['li1','li2','li3']
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      const sum = require('../utils/sum.js').sum;
-    console.log(sum(4,5))
+      wx.request({
+        url: 'http://localhost:8888/data',
+        success:function(data) {
+          console.log(data)
+
+        },
+        error:function(error) {
+          console.error(error);
+
+        }
+      })
   },
 
   /**
@@ -34,7 +43,7 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-  console.log('hide')
+
   },
 
   /**
@@ -64,10 +73,19 @@ Page({
   onShareAppMessage: function () {
 
   },
-  navigateToPost(e) {
-    console.log('click',e)
-    wx.navigateTo({
-      url: '/pages/posts/posts',
-    })
+  handleTap1:function() {
+      console.log('tap1')
+  },
+  handleTap2: function () {
+    console.log('tap2')
+
+  },
+  handleTap3: function () {
+    console.log('tap3')
+
+  },
+  handleTap4: function () {
+    console.log('tap4')
+
   }
 })

@@ -12,3 +12,6 @@ $RECYCLE.BIN/
 
 # Node.js
 node_modules/
+/.idea
+/miniprogram_npm
+/node_modules
