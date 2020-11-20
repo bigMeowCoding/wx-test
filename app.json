@@ -3,8 +3,22 @@
     "pages/posts/posts",
     "pages/welcome/welcome",
     "pages/test/test",
-    "pages/movies/movies"
+    "pages/movies/movies",
+    "pages/more-movie/more-movie",
+    "pages/movie-detail/movie-detail"
   ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/welcome/welcome",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/posts/posts",
+        "text": "日志"
+      }
+    ]
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#c22A1E",
@@ -12,8 +26,8 @@
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
-    "usingComponents": {
-      "l-rate": "/miniprogram_npm/lin-ui/rate/index"
-    },
+  "usingComponents": {
+    "l-rate": "/miniprogram_npm/lin-ui/rate/index"
+  },
   "sitemapLocation": "sitemap.json"
 }
